@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PAVEO — укладка тротуарной плитки под ключ в Кишинёве и по Молдове · 060 000 000</title>
+<meta name="description" content="Укладка тротуарной плитки и брусчатки под ключ: двор, дорожки, заезд и парковка. Основание по технологии, бордюры, водоотвод. Работа от 110 лей/м², 30–50 м² в день, гарантия 3 года. Калькулятор цены онлайн.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PAVEO — укладка тротуарной плитки под ключ">
+<meta property="og:description" content="Двор, дорожки, заезд для машины. Работа от 110 лей/м², гарантия 3 года. Посчитайте цену онлайн.">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://webonix-md.github.io/pavaj/">
+<meta property="og:image" content="https://webonix-md.github.io/pavaj/img/og/og-square-ru.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<link rel="alternate" hreflang="ro" href="ro.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/Unbounded-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/InterTight-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=3">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"PAVEO","telephone":"+37360000000","areaServed":"Moldova","address":{"@type":"PostalAddress","addressLocality":"Chișinău","addressCountry":"MD"},"openingHours":"Mo-Sa 08:00-19:00","priceRange":"от 110 лей/м²"}</script>
+</head>
+<body>
+
+<!-- ============ ШАПКА ============ -->
+<header class="top" id="top">
+  <div class="wrap top__in">
+    <a class="logo" href="#top" aria-label="PAVEO — на главную"><i class="logo__mark" aria-hidden="true"><b></b><b></b><b></b><b></b></i>PAVEO</a>
+    <nav class="nav" id="nav" aria-label="Меню">
+      <a href="#services">Что укладываем</a>
+      <a href="#base">Основание</a>
+      <a href="#tiles">Плитка</a>
+      <a href="#prices">Цены</a>
+      <a href="#works">Работы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="top__right">
+      <a class="lang" href="ro.html" hreflang="ro">RO</a>
+      <a class="top__tel" href="tel:+37360000000"><small>Пн–Сб 8:00–19:00</small>060 000 000</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ ПЕРВЫЙ ЭКРАН + КАЛЬКУЛЯТОР ============ -->
+<section class="hero">
+  <div class="hero__text">
+    <p class="kicker">Кишинёв и вся Молдова</p>
+    <h1>Укладка тротуарной плитки <span>под ключ</span></h1>
+    <p class="hero__lead">Двор, дорожки, заезд для машины. Готовим основание по технологии, чтобы плитка не просела после первой зимы и вода уходила от дома.</p>
+    <ul class="hero__facts">
+      <li><b>от 110 лей</b><span>за м² работы</span></li>
+      <li><b>30–50 м²</b><span>укладываем за день</span></li>
+      <li><b>3 года</b><span>гарантия по договору</span></li>
+    </ul>
+    <div class="hero__btns">
+      <a class="btn btn--brick" href="tel:+37360000000">Позвонить</a>
+      <a class="btn btn--line" href="https://wa.me/37360000000?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B2%D1%8B%D0%B7%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%B0%20%D0%BD%D0%B0%20%D0%B7%D0%B0%D0%BC%D0%B5%D1%80." target="_blank" rel="noopener">Бесплатный замер</a>
+    </div>
+    <p class="hero__note">Пришлите 2–3 фото участка в WhatsApp — назовём цену в тот же день.</p>
+  </div>
+
+  <div class="hero__media">
+    <img class="hero__img" src="img/hero.webp" alt="Заезд к современному дому, выложенный светлой тротуарной плиткой" fetchpriority="high">
+
+    <form class="calc" id="calc" aria-labelledby="calcTitle" onsubmit="return false">
+      <div class="calc__head">
+        <h2 id="calcTitle">Цена за минуту</h2>
+        <span>ориентир, точно — после замера</span>
+      </div>
+
+      <div class="calc__row">
+        <label class="calc__lbl" for="area">Площадь</label>
+        <div class="area">
+          <input type="range" id="areaRange" min="10" max="400" step="5" value="80" aria-label="Площадь, м²">
+          <div class="area__num"><input type="number" id="area" min="10" max="5000" value="80" inputmode="numeric"><span>м²</span></div>
+        </div>
+      </div>
+
+      <div class="calc__row">
+        <span class="calc__lbl">Что укладываем</span>
+        <div class="seg" data-group="use"></div>
+      </div>
+
+      <div class="calc__row">
+        <span class="calc__lbl">Основание</span>
+        <div class="seg seg--3" data-group="base"></div>
+      </div>
+
+      <div class="calc__row calc__row--2">
+        <div>
+          <span class="calc__lbl">Сейчас на участке</span>
+          <div class="seg" data-group="old"></div>
+        </div>
+        <div>
+          <label class="calc__lbl" for="tile">Плитка</label>
+          <select id="tile" class="select"></select>
+        </div>
+      </div>
+
+      <details class="calc__more">
+        <summary>Бордюр и водоотвод</summary>
+        <div class="calc__extras" id="extras"></div>
+      </details>
+
+      <div class="calc__sum" aria-live="polite">
+        <div class="calc__parts">
+          <p><span>Работа</span><b id="sWork">—</b></p>
+          <p><span>Материалы</span><b id="sMat">—</b></p>
+          <p><span>Срок</span><b id="sDays">—</b></p>
+        </div>
+        <div class="calc__total">
+          <span>Итого под ключ</span>
+          <b id="sTotal">—</b>
+          <small id="sPerM">—</small>
+        </div>
+      </div>
+      <div class="calc__btns">
+        <a class="btn btn--brick" id="sendWa" href="#" target="_blank" rel="noopener">Отправить расчёт в WhatsApp</a>
+        <button class="btn btn--line" type="button" id="sendViber">Viber</button>
+      </div>
+      <p class="calc__toast" id="toast" role="status" hidden>Расчёт скопирован — вставьте его в чат Viber</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ ПОЛОСА ДОВЕРИЯ ============ -->
+<div class="strip">
+  <div class="wrap strip__in">
+    <p><b>Замер бесплатно</b> по Кишинёву и пригородам</p>
+    <p><b>Смета до начала работ</b> — цена не вырастет</p>
+    <p><b>Своя техника</b>: виброплиты, бобкэт</p>
+    <p><b>Плитку подберём</b> у производителя без наценки</p>
+  </div>
+</div>
+
+<!-- ============ ЧТО УКЛАДЫВАЕМ ============ -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="head">
+      <p class="label"><i>01</i>Что укладываем</p>
+      <h2>Для дома, двора <span>и для машины</span></h2>
+      <p class="head__lead">Основание под каждую задачу своё: дорожке хватит щебня и песка, заезду для машины нужен толстый слой щебня или бетонная плита.</p>
+    </div>
+
+    <div class="svc">
+      <article class="svc__card svc__card--big">
+        <img src="img/svc-yard.webp" alt="Двор перед домом, выложенный плиткой в два цвета" loading="lazy">
+        <div class="svc__body">
+          <h3>Двор целиком</h3>
+          <p>Планировка, уклоны от дома, бордюры по периметру, плитка в один или несколько цветов.</p>
+          <span class="svc__price">от 110 лей/м² работа</span>
+        </div>
+      </article>
+      <article class="svc__card svc__card--big">
+        <img src="img/svc-parking.webp" alt="Площадка для машины у современного дома из светлой плитки с тёмными вставками" loading="lazy">
+        <div class="svc__body">
+          <h3>Заезд и парковка</h3>
+          <p>Плитка 6–8 см, щебень 25–30 см или бетонная плита. Не продавится под машиной.</p>
+          <span class="svc__price">от 140 лей/м² работа</span>
+        </div>
+      </article>
+      <article class="svc__card">
+        <img src="img/svc-path.webp" alt="Изогнутая дорожка из тёмной брусчатки в саду" loading="lazy">
+        <div class="svc__body">
+          <h3>Дорожки в саду</h3>
+          <p>Прямые и с поворотами, с садовым бордюром.</p>
+          <span class="svc__price">от 110 лей/м²</span>
+        </div>
+      </article>
+      <article class="svc__card">
+        <img src="img/svc-around.webp" alt="Плиточная отмостка вдоль забора с декоративной галькой" loading="lazy">
+        <div class="svc__body">
+          <h3>Отмостка вокруг дома</h3>
+          <p>Уводим воду от фундамента, уклон 2–3%.</p>
+          <span class="svc__price">от 130 лей/м²</span>
+        </div>
+      </article>
+      <article class="svc__card">
+        <img src="img/svc-curb.webp" alt="Бордюр между газоном и дорожкой" loading="lazy">
+        <div class="svc__body">
+          <h3>Бордюры и водоотвод</h3>
+          <p>Садовые и дорожные бордюры, лотки, решётки, люки.</p>
+          <span class="svc__price">от 70 лей/м.п.</span>
+        </div>
+      </article>
+      <article class="svc__card">
+        <img src="img/svc-repair.webp" alt="Старый потрескавшийся бетон у дома, который нужно заменить" loading="lazy">
+        <div class="svc__body">
+          <h3>Перекладка старой плитки</h3>
+          <p>Снимаем просевшую плитку или бетон, делаем основание заново.</p>
+          <span class="svc__price">демонтаж от 55 лей/м²</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ОСНОВАНИЕ (РАЗРЕЗ) ============ -->
+<section class="sec sec--dark" id="base">
+  <div class="wrap base">
+    <div class="base__text">
+      <p class="label label--light"><i>02</i>Что под плиткой</p>
+      <h2>Плитка держится <span>на основании</span></h2>
+      <p>Если сэкономить на щебне и трамбовке, через зиму появятся колеи и лужи. Поэтому в смете основание всегда отдельной строкой: вы видите, сколько слоёв и какой толщины мы делаем.</p>
+      <div class="tabs" role="tablist" aria-label="Тип нагрузки">
+        <button role="tab" aria-selected="true" data-load="walk">Дорожка и двор</button>
+        <button role="tab" aria-selected="false" data-load="car">Под машину</button>
+        <button role="tab" aria-selected="false" data-load="otm">Отмостка</button>
+      </div>
+      <p class="base__depth">Общая глубина: <b id="depth">25–30 см</b></p>
+    </div>
+
+    <div class="pie" data-pie="walk">
+      <div class="pie__img"><img src="img/pie-walk.webp" alt="Слои под дорожкой и двором: плитка, песок или ЦПС, щебень, геотекстиль, грунт" width="1000" height="1339"><i class="pie__dot" style="left:9%;top:14.6%;--to:22.4">1</i><i class="pie__dot" style="left:9%;top:31.7%;--to:22.6">2</i><i class="pie__dot" style="left:9%;top:49.7%;--to:23.0">3</i><i class="pie__dot" style="left:9%;top:61.5%;--to:22.3">4</i><i class="pie__dot" style="left:9%;top:74.6%;--to:22.3">5</i></div>
+      <div class="pie__side">
+        <ol class="pie__list"><li><b>Тротуарная плитка</b><span>4–6 см</span></li><li><b>Песок или ЦПС (цемент + песок)</b><span>3–5 см</span></li><li><b>Щебень 20–40, трамбуем слоями</b><span>15–20 см</span></li><li><b>Геотекстиль</b><span>1 слой</span></li><li><b>Грунт, уклон 1–2%</b><span>выемка 25–30 см</span></li></ol>
+        <p class="pie__note">Геотекстиль не даёт щебню уйти в грунт и не пускает траву снизу.</p>
+      </div>
+    </div>
+    <div class="pie" data-pie="car" hidden>
+      <div class="pie__img"><img src="img/pie-car.webp" alt="Слои под заездом для машины: толстая плитка, песок, толстый слой щебня, геотекстиль, грунт" width="1000" height="1339" loading="lazy"><i class="pie__dot" style="left:9%;top:14.6%;--to:22.4">1</i><i class="pie__dot" style="left:9%;top:25.8%;--to:22.2">2</i><i class="pie__dot" style="left:9%;top:43.5%;--to:22.7">3</i><i class="pie__dot" style="left:9%;top:60.3%;--to:22.5">4</i><i class="pie__dot" style="left:9%;top:72%;--to:23.5">5</i></div>
+      <div class="pie__side">
+        <ol class="pie__list"><li><b>Тротуарная плитка</b><span>6–8 см</span></li><li><b>Песок</b><span>3–5 см</span></li><li><b>Щебень 20–40, трамбуем слоями</b><span>25–30 см</span></li><li><b>Геотекстиль</b><span>1 слой</span></li><li><b>Грунт, уклон 1–2%</b><span>выемка 35–45 см</span></li></ol>
+        <p class="pie__note">Под машину щебня почти вдвое больше, а плитка толще — тогда не появятся колеи.</p>
+      </div>
+    </div>
+    <div class="pie" data-pie="otm" hidden>
+      <div class="pie__img"><img src="img/pie-otmostka.webp" alt="Слои отмостки: плитка, песчано-цементная смесь, гидроизоляция, щебень, песок, утеплитель, песок" width="1000" height="1339" loading="lazy"><i class="pie__dot" style="left:9%;top:14.6%;--to:22.4">1</i><i class="pie__dot" style="left:9%;top:26.6%;--to:22.6">2</i><i class="pie__dot" style="left:9%;top:39.3%;--to:22.2">3</i><i class="pie__dot" style="left:9%;top:49.9%;--to:22.9">4</i><i class="pie__dot" style="left:9%;top:61.5%;--to:22.3">5</i><i class="pie__dot" style="left:9%;top:70.6%;--to:22.5">6</i><i class="pie__dot" style="left:9%;top:80.5%;--to:25">7</i></div>
+      <div class="pie__side">
+        <ol class="pie__list"><li><b>Тротуарная плитка</b><span>4 см</span></li><li><b>Песчано-цементная смесь</b><span>5 см</span></li><li><b>Гидроизоляция рулонная</b><span>1 слой</span></li><li><b>Щебень фракции 5–20</b><span>8 см</span></li><li><b>Песок</b><span>10 см</span></li><li><b>Утеплитель (пеноплекс)</b><span>5 см</span></li><li><b>Тонкий слой песка</b><span>2 см</span></li></ol>
+        <p class="pie__note">Утеплитель не даёт грунту у фундамента промерзать и вспучиваться, гидроизоляция не пускает воду к стенам дома.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ПЛИТКА ============ -->
+<section class="sec" id="tiles">
+  <div class="wrap">
+    <div class="head head--row">
+      <div>
+        <p class="label"><i>03</i>Какую плитку взять</p>
+        <h2>Подберём плитку <span>под задачу</span></h2>
+      </div>
+      <p class="head__lead">Можете купить сами или доверить нам: возим с заводов Молдовы по ценам производителя и считаем количество с запасом 5% на подрезку.</p>
+    </div>
+
+    <div class="tiles">
+      <article class="tile">
+        <div class="tile__img"><img src="img/mat-kirpich.webp" alt="Серая плитка «кирпичик», уложенная ёлочкой" loading="lazy"></div>
+        <h3>«Кирпичик» 20×10</h3>
+        <p>Классика, кладут ёлочкой или рядами. Подходит везде.</p>
+        <dl><dt>Толщина</dt><dd>4 / 6 / 8 см</dd><dt>Материал</dt><dd>от 175 лей/м²</dd></dl>
+      </article>
+      <article class="tile">
+        <div class="tile__img"><img src="img/mat-volna.webp" alt="Серая плитка «волна»" loading="lazy"></div>
+        <h3>«Волна»</h3>
+        <p>Плотно сцепляется, хороша для заезда и парковки.</p>
+        <dl><dt>Толщина</dt><dd>6 / 8 см</dd><dt>Материал</dt><dd>от 205 лей/м²</dd></dl>
+      </article>
+      <article class="tile">
+        <div class="tile__img"><img src="img/mat-color.webp" alt="Плитка терракотового цвета с фигурным рисунком" loading="lazy"></div>
+        <h3>Цветная и «Старый город»</h3>
+        <p>Колормикс, несколько размеров в одной партии, рисунки.</p>
+        <dl><dt>Толщина</dt><dd>4 / 6 см</dd><dt>Материал</dt><dd>от 265 лей/м²</dd></dl>
+      </article>
+      <article class="tile">
+        <div class="tile__img"><img src="img/mat-hex.webp" alt="Шестигранная плитка с каменной крошкой" loading="lazy"></div>
+        <h3>Гексагон и крупный формат</h3>
+        <p>Для террас и зон отдыха. Нужна точная подрезка.</p>
+        <dl><dt>Толщина</dt><dd>6 см</dd><dt>Материал</dt><dd>от 290 лей/м²</dd></dl>
+      </article>
+      <article class="tile">
+        <div class="tile__img"><img src="img/mat-granit.webp" alt="Гранитная колотая брусчатка" loading="lazy"></div>
+        <h3>Гранитная брусчатка</h3>
+        <p>Служит десятилетиями, не выгорает. Укладка дороже.</p>
+        <dl><dt>Толщина</dt><dd>5–10 см</dd><dt>Материал</dt><dd>от 750 лей/м²</dd></dl>
+      </article>
+      <article class="tile tile--own">
+        <div class="tile__img"><img src="img/mat-vibro.webp" alt="Серая вибропрессованная плитка" loading="lazy"></div>
+        <h3>Плитка уже куплена?</h3>
+        <p>Уложим вашу. Посмотрим партию до начала работ и скажем, хватит ли.</p>
+        <dl><dt>Платите</dt><dd>только работу</dd><dt>Укладка</dt><dd>от 110 лей/м²</dd></dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ЦЕНЫ ============ -->
+<section class="sec sec--sand" id="prices">
+  <div class="wrap">
+    <div class="head head--row">
+      <div>
+        <p class="label"><i>04</i>Цены на работы</p>
+        <h2>Прайс <span>по позициям</span></h2>
+      </div>
+      <p class="head__lead">Цены за работу без материалов. Точную сумму фиксируем в смете после замера — она не меняется, если объём остаётся тем же.</p>
+    </div>
+    <div class="price" id="priceTable"></div>
+    <p class="price__note">Минимальный заказ — 20 м². На объёмы от 200 м² — цена ниже, обсудим на замере.</p>
+  </div>
+</section>
+
+<!-- ============ РАБОТЫ ============ -->
+<section class="sec" id="works">
+  <div class="wrap">
+    <div class="head">
+      <p class="label"><i>05</i>Наши работы</p>
+      <h2>Объекты <span>с цифрами</span></h2>
+      <p class="head__lead">Площадь, сроки и итоговая сумма по каждому объекту — чтобы вы понимали порядок цен.</p>
+    </div>
+    <div class="works">
+      <article class="work work--big">
+        <img src="img/work-1.webp" alt="Задний двор частного дома с террасой и площадкой из плитки" loading="lazy">
+        <div class="work__info">
+          <h3>Двор с террасой, Ставчены</h3>
+          <dl><dt>Площадь</dt><dd>140 м²</dd><dt>Срок</dt><dd>6 дней</dd><dt>Основание</dt><dd>щебень 20 см</dd><dt>Сумма</dt><dd>58 000 лей</dd></dl>
+        </div>
+      </article>
+      <article class="work">
+        <img src="img/work-2.webp" alt="Круглая площадка из плитки в саду" loading="lazy">
+        <div class="work__info">
+          <h3>Площадка в саду, Дурлешты</h3>
+          <dl><dt>Площадь</dt><dd>45 м²</dd><dt>Срок</dt><dd>3 дня</dd><dt>Сумма</dt><dd>19 500 лей</dd></dl>
+        </div>
+      </article>
+      <article class="work">
+        <img src="img/work-3.webp" alt="Садовая дорожка из отдельных плит среди зелени" loading="lazy">
+        <div class="work__info">
+          <h3>Дорожка-шаги, Ватра</h3>
+          <dl><dt>Длина</dt><dd>22 м</dd><dt>Срок</dt><dd>1 день</dd><dt>Сумма</dt><dd>4 800 лей</dd></dl>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ЭТАПЫ ============ -->
+<section class="sec sec--sand" id="steps">
+  <div class="wrap">
+    <div class="head">
+      <p class="label"><i>06</i>Как работаем</p>
+      <h2>От звонка <span>до готового двора</span></h2>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <img src="img/step-measure.webp" alt="Мастер размечает плитку на объекте" loading="lazy">
+        <div><h3>Замер</h3><p>Приезжаем, меряем площадь и перепады, смотрим грунт и куда уходит вода. Бесплатно.</p></div>
+      </li>
+      <li class="step">
+        <img src="img/step-cut.webp" alt="Мастер отмечает линию реза на плитке" loading="lazy">
+        <div><h3>Смета</h3><p>Каждая работа отдельной строкой: выемка, щебень, бордюр, укладка, вывоз. Цену фиксируем в договоре.</p></div>
+      </li>
+      <li class="step">
+        <img src="img/step-base.webp" alt="Рабочий готовит основание под плитку" loading="lazy">
+        <div><h3>Основание</h3><p>Выемка грунта, геотекстиль, щебень слоями с трамбовкой, бордюры на бетон.</p></div>
+      </li>
+      <li class="step">
+        <img src="img/step-lay.webp" alt="Руки мастера укладывают плитку на песок" loading="lazy">
+        <div><h3>Укладка</h3><p>30–50 м² в день. Подрезка по краям, виброплита, засыпка швов песком.</p></div>
+      </li>
+      <li class="step">
+        <img src="img/brigade.webp" alt="Мастер выравнивает ряд плитки" loading="lazy">
+        <div><h3>Сдача и гарантия</h3><p>Убираем мусор, проверяем уклоны водой. Гарантия 3 года: просядет — переложим бесплатно.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ ПОЧЕМУ ПРОСЕДАЕТ ============ -->
+<section class="sec" id="mistakes">
+  <div class="wrap">
+    <div class="head head--row">
+      <div>
+        <p class="label"><i>07</i>Если плитку уже клали</p>
+        <h2>Почему плитка <span>портится</span></h2>
+      </div>
+      <p class="head__lead">Почти все проблемы — из-за основания и уклонов. Если узнали свой двор, переложим и исправим причину, а не только верхний слой.</p>
+    </div>
+    <div class="bugs">
+      <article class="bug"><b>Колеи и ямы</b><p>Мало щебня или его не трамбовали. Под машину нужно 25–30 см, а часто кладут 10.</p></article>
+      <article class="bug"><b>Лужи у дома</b><p>Нет уклона 1–2% от стен и нет лотков. Вода стоит и уходит под фундамент.</p></article>
+      <article class="bug"><b>Трава в швах</b><p>Не положили геотекстиль, швы не засыпали до конца или засыпали землёй.</p></article>
+      <article class="bug"><b>Бордюр «уехал»</b><p>Бордюр поставили на песок без бетонного замка — плитку больше ничто не держит.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ОТЗЫВЫ ============ -->
+<section class="sec sec--sand" id="reviews">
+  <div class="wrap">
+    <div class="head">
+      <p class="label"><i>08</i>Отзывы</p>
+      <h2>Что говорят <span>заказчики</span></h2>
+    </div>
+    <div class="reviews">
+      <blockquote class="review"><p>Сделали двор 90 м² за четыре дня. Понравилось, что смету расписали по строкам, итог не поменялся ни на лей.</p><footer><b>Игорь</b><span>Трушены · двор с заездом</span></footer></blockquote>
+      <blockquote class="review"><p>Переложили плитку, которую нам до этого уложили «по-быстрому». Сняли, добавили щебня, сделали лоток у гаража — луж больше нет.</p><footer><b>Наталья</b><span>Буюканы · перекладка</span></footer></blockquote>
+      <blockquote class="review"><p>Я в Италии, всё решали через Viber: фото каждого дня, оплата по этапам. Родители довольны.</p><footer><b>Андрей</b><span>Яловены · двор для родителей</span></footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ВОПРОСЫ ============ -->
+<section class="sec" id="faq">
+  <div class="wrap faq">
+    <div class="head">
+      <p class="label"><i>09</i>Вопросы</p>
+      <h2>Частые <span>вопросы</span></h2>
+    </div>
+    <div class="faq__list">
+      <details><summary>Сколько дней займёт работа?</summary><p>Бригада укладывает 30–50 м² в день. Ещё 1–2 дня уходит на выемку грунта и основание. Двор 100 м² обычно готов за 4–5 дней. Если делаем бетонную плиту, добавьте 3–5 дней, пока бетон наберёт прочность.</p></details>
+      <details><summary>Кто покупает плитку и щебень?</summary><p>Как удобнее. Можем всё привезти сами: плитку с завода по цене производителя, щебень и песок — от карьера. Или уложим вашу плитку, тогда платите только работу.</p></details>
+      <details><summary>Нужен ли бетон под машину?</summary><p>Не всегда. Для легковой машины хватает щебня 25–30 см с хорошей трамбовкой и плитки 6–8 см. Бетонная плита нужна для грузовиков, бусов и слабого грунта.</p></details>
+      <details><summary>Какую толщину плитки брать?</summary><p>Для дорожек и двора — 4–6 см. Для заезда и парковки — от 6 см, лучше 8. Тонкую плитку под машиной ломает даже на хорошем основании.</p></details>
+      <details><summary>Можно класть осенью и зимой?</summary><p>Пока нет морозов и снега — да, работаем до конца ноября. На мёрзлый грунт не кладём: весной всё поведёт. Зимой можно сделать замер и смету, чтобы начать весной первыми.</p></details>
+      <details><summary>Что входит в гарантию?</summary><p>Гарантия 3 года по договору. Если плитка просела, пошла волной или уехал бордюр, перекладываем бесплатно. Не входят механические повреждения и нагрузка тяжелее той, под которую делали основание.</p></details>
+      <details><summary>Работаете за пределами Кишинёва?</summary><p>Да, по всей Молдове. Замер по Кишинёву и пригородам бесплатный, в районы выезжаем при заказе от 50 м² или считаем по фото.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ФИНАЛ ============ -->
+<section class="cta" id="contact">
+  <div class="wrap cta__in">
+    <div>
+      <h2>Пришлите фото участка — <span>посчитаем сегодня</span></h2>
+      <p>2–3 фото и примерные размеры в WhatsApp или Viber. Ответим с ориентировочной ценой и временем замера.</p>
+    </div>
+    <div class="cta__btns">
+      <a class="btn btn--brick btn--lg" href="tel:+37360000000">060 000 000</a>
+      <a class="btn btn--white" href="https://wa.me/37360000000?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%20%D1%84%D0%BE%D1%82%D0%BE%20%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B0%D1%81%D1%87%D1%91%D1%82%D0%B0." target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn--white" href="viber://chat?number=%2B37360000000">Viber</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <a class="logo logo--light" href="#top"><i class="logo__mark" aria-hidden="true"><b></b><b></b><b></b><b></b></i>PAVEO</a>
+    <p>Укладка тротуарной плитки, брусчатки и бордюров.<br>Кишинёв и вся Молдова.</p>
+    <p><a href="tel:+37360000000">060 000 000</a><br>Пн–Сб 8:00–19:00</p>
+    <p class="foot__soc"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="TikTok">TikTok</a></p>
+  </div>
+  <div class="wrap foot__copy"><span>© 2026 PAVEO</span><a href="ro.html" hreflang="ro">Versiunea în limba română</a></div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+37360000000">Позвонить</a>
+  <a href="https://wa.me/37360000000" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<!-- Все цены сайта: калькулятор и прайс считаются отсюда (лей). work — работа, mat — материал. -->
+<script type="application/json" id="calc-data">
+{
+  "phone": "37360000000",
+  "minArea": 20,
+  "perDay": 40,
+  "spread": 0.1,
+  "uses": [
+    {"id": "walk", "t": "Двор, дорожки", "work": 110},
+    {"id": "car", "t": "Заезд, парковка", "work": 140}
+  ],
+  "bases": [
+    {"id": "ready", "t": "Готовое", "s": "есть бетон или ровная площадка", "work": {"walk": 0, "car": 0}, "mat": {"walk": 0, "car": 0}},
+    {"id": "gravel", "t": "Щебень + песок", "s": "выемка, геотекстиль, щебень, трамбовка", "work": {"walk": 60, "car": 80}, "mat": {"walk": 70, "car": 110}, "on": true},
+    {"id": "concrete", "t": "Бетон", "s": "армированная плита 10–15 см", "work": {"walk": 120, "car": 150}, "mat": {"walk": 200, "car": 260}, "days": 4}
+  ],
+  "olds": [
+    {"id": "ground", "t": "Земля, трава", "work": 0, "on": true},
+    {"id": "old", "t": "Старое покрытие", "work": 55}
+  ],
+  "tiles": [
+    {"id": "v4", "t": "Кирпичик 4 см", "mat": 175, "walkOnly": true},
+    {"id": "v6", "t": "Кирпичик или волна 6 см", "mat": 215, "on": true},
+    {"id": "v8", "t": "Волна 8 см", "mat": 260},
+    {"id": "color", "t": "Цветная, «Старый город»", "mat": 265},
+    {"id": "big", "t": "Гексагон, крупный формат", "mat": 290, "workAdd": 30},
+    {"id": "granite", "t": "Гранитная брусчатка", "mat": 750, "workAdd": 90},
+    {"id": "own", "t": "Плитка уже есть", "mat": 0}
+  ],
+  "extras": [
+    {"id": "curbG", "t": "Садовый бордюр", "unit": "м.п.", "work": 70, "mat": 60},
+    {"id": "curbR", "t": "Дорожный бордюр", "unit": "м.п.", "work": 110, "mat": 140},
+    {"id": "drain", "t": "Водоотводный лоток", "unit": "м.п.", "work": 120, "mat": 180}
+  ],
+  "price": [
+    {"g": "Укладка", "rows": [
+      ["Плитка на готовое основание, пешеходная зона", "м²", 110],
+      ["Плитка под машину (6–8 см)", "м²", 140],
+      ["Сложный рисунок, крупный формат, гексагон", "м²", 140],
+      ["Гранитная брусчатка", "м²", 200],
+      ["Подрезка плитки по контуру", "м.п.", 40]
+    ]},
+    {"g": "Основание", "rows": [
+      ["Выемка грунта и планировка", "м²", 35],
+      ["Геотекстиль, щебень, трамбовка — пешеходное", "м²", 60],
+      ["То же, под машину (щебень 25–30 см)", "м²", 80],
+      ["Бетонная плита с армированием", "м²", 150]
+    ]},
+    {"g": "Бордюры и водоотвод", "rows": [
+      ["Садовый бордюр на бетон", "м.п.", 70],
+      ["Дорожный бордюр", "м.п.", 110],
+      ["Водоотводный лоток с решёткой", "м.п.", 120],
+      ["Дождеприёмник, люк", "шт.", 350]
+    ]},
+    {"g": "Демонтаж и вывоз", "rows": [
+      ["Демонтаж старой плитки", "м²", 40],
+      ["Демонтаж бетона", "м²", 70],
+      ["Вывоз мусора и грунта", "м³", 300]
+    ]}
+  ]
+}
+</script>
+<script src="main.js?v=3"></script>
+</body>
+</html>

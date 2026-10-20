@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PAVEO — montare pavaj la cheie în Chișinău și în toată Moldova · 060 000 000</title>
+<meta name="description" content="Montare pavaj și pavele la cheie: curte, alei, acces auto și parcare. Fundație după tehnologie, borduri, rigole. Manopera de la 110 lei/m², 30–50 m² pe zi, garanție 3 ani. Calculator de preț online.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PAVEO — montare pavaj la cheie">
+<meta property="og:description" content="Curte, alei, acces auto. Manopera de la 110 lei/m², garanție 3 ani. Calculați prețul online.">
+<meta property="og:locale" content="ro_RO">
+<meta property="og:url" content="https://webonix-md.github.io/pavaj/ro.html">
+<meta property="og:image" content="https://webonix-md.github.io/pavaj/img/og/og-square-ro.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<link rel="alternate" hreflang="ru" href="index.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/Unbounded-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/InterTight-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=3">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"PAVEO","telephone":"+37360000000","areaServed":"Moldova","address":{"@type":"PostalAddress","addressLocality":"Chișinău","addressCountry":"MD"},"openingHours":"Mo-Sa 08:00-19:00","priceRange":"de la 110 lei/m²"}</script>
+</head>
+<body>
+
+<!-- ============ ШАПКА ============ -->
+<header class="top" id="top">
+  <div class="wrap top__in">
+    <a class="logo" href="#top" aria-label="PAVEO — pagina principală"><i class="logo__mark" aria-hidden="true"><b></b><b></b><b></b><b></b></i>PAVEO</a>
+    <nav class="nav" id="nav" aria-label="Meniu">
+      <a href="#services">Ce pavăm</a>
+      <a href="#base">Fundația</a>
+      <a href="#tiles">Pavajul</a>
+      <a href="#prices">Prețuri</a>
+      <a href="#works">Lucrări</a>
+      <a href="#faq">Întrebări</a>
+    </nav>
+    <div class="top__right">
+      <a class="lang" href="index.html" hreflang="ru">RU</a>
+      <a class="top__tel" href="tel:+37360000000"><small>Lun–Sâm 8:00–19:00</small>060 000 000</a>
+      <button class="burger" id="burger" aria-label="Deschide meniul" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ ПЕРВЫЙ ЭКРАН + КАЛЬКУЛЯТОР ============ -->
+<section class="hero">
+  <div class="hero__text">
+    <p class="kicker">Chișinău și toată Moldova</p>
+    <h1>Montare pavaj <span>la cheie</span></h1>
+    <p class="hero__lead">Curte, alei, acces pentru mașină. Facem fundația după tehnologie, ca pavajul să nu se lase după prima iarnă și apa să se scurgă de la casă.</p>
+    <ul class="hero__facts">
+      <li><b>de la 110 lei</b><span>manopera pe m²</span></li>
+      <li><b>30–50 m²</b><span>montăm într-o zi</span></li>
+      <li><b>3 ani</b><span>garanție prin contract</span></li>
+    </ul>
+    <div class="hero__btns">
+      <a class="btn btn--brick" href="tel:+37360000000">Sună</a>
+      <a class="btn btn--line" href="https://wa.me/37360000000?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20m%C4%83surare%20gratuit%C4%83." target="_blank" rel="noopener">Măsurare gratuită</a>
+    </div>
+    <p class="hero__note">Trimiteți 2–3 poze ale terenului pe WhatsApp — vă spunem prețul în aceeași zi.</p>
+  </div>
+
+  <div class="hero__media">
+    <img class="hero__img" src="img/hero.webp" alt="Acces auto la o casă modernă, pavat cu pavaj deschis la culoare" fetchpriority="high">
+
+    <form class="calc" id="calc" aria-labelledby="calcTitle" onsubmit="return false">
+      <div class="calc__head">
+        <h2 id="calcTitle">Prețul într-un minut</h2>
+        <span>orientativ, exact — după măsurare</span>
+      </div>
+
+      <div class="calc__row">
+        <label class="calc__lbl" for="area">Suprafața</label>
+        <div class="area">
+          <input type="range" id="areaRange" min="10" max="400" step="5" value="80" aria-label="Suprafața, m²">
+          <div class="area__num"><input type="number" id="area" min="10" max="5000" value="80" inputmode="numeric"><span>m²</span></div>
+        </div>
+      </div>
+
+      <div class="calc__row">
+        <span class="calc__lbl">Ce pavăm</span>
+        <div class="seg" data-group="use"></div>
+      </div>
+
+      <div class="calc__row">
+        <span class="calc__lbl">Fundația</span>
+        <div class="seg seg--3" data-group="base"></div>
+      </div>
+
+      <div class="calc__row calc__row--2">
+        <div>
+          <span class="calc__lbl">Acum pe teren</span>
+          <div class="seg" data-group="old"></div>
+        </div>
+        <div>
+          <label class="calc__lbl" for="tile">Pavajul</label>
+          <select id="tile" class="select"></select>
+        </div>
+      </div>
+
+      <details class="calc__more">
+        <summary>Borduri și scurgere</summary>
+        <div class="calc__extras" id="extras"></div>
+      </details>
+
+      <div class="calc__sum" aria-live="polite">
+        <div class="calc__parts">
+          <p><span>Manopera</span><b id="sWork">—</b></p>
+          <p><span>Materiale</span><b id="sMat">—</b></p>
+          <p><span>Termen</span><b id="sDays">—</b></p>
+        </div>
+        <div class="calc__total">
+          <span>Total la cheie</span>
+          <b id="sTotal">—</b>
+          <small id="sPerM">—</small>
+        </div>
+      </div>
+      <div class="calc__btns">
+        <a class="btn btn--brick" id="sendWa" href="#" target="_blank" rel="noopener">Trimite calculul pe WhatsApp</a>
+        <button class="btn btn--line" type="button" id="sendViber">Viber</button>
+      </div>
+      <p class="calc__toast" id="toast" role="status" hidden>Calculul e copiat — lipiți-l în chatul Viber</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ ПОЛОСА ДОВЕРИЯ ============ -->
+<div class="strip">
+  <div class="wrap strip__in">
+    <p><b>Măsurare gratuită</b> în Chișinău și suburbii</p>
+    <p><b>Deviz înainte de lucru</b> — prețul nu crește</p>
+    <p><b>Tehnică proprie</b>: plăci vibrante, Bobcat</p>
+    <p><b>Alegem pavajul</b> de la producător, fără adaos</p>
+  </div>
+</div>
+
+<!-- ============ ЧТО УКЛАДЫВАЕМ ============ -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="head">
+      <p class="label"><i>01</i>Ce pavăm</p>
+      <h2>Pentru casă, curte <span>și pentru mașină</span></h2>
+      <p class="head__lead">Fiecare lucrare are fundația ei: pentru o alee ajung pietrișul și nisipul, iar accesul auto cere un strat gros de pietriș sau o placă de beton.</p>
+    </div>
+
+    <div class="svc">
+      <article class="svc__card svc__card--big">
+        <img src="img/svc-yard.webp" alt="Curte în fața casei, pavată în două culori" loading="lazy">
+        <div class="svc__body">
+          <h3>Curtea întreagă</h3>
+          <p>Nivelare, pante de la casă, borduri pe perimetru, pavaj într-o culoare sau în mai multe.</p>
+          <span class="svc__price">manopera de la 110 lei/m²</span>
+        </div>
+      </article>
+      <article class="svc__card svc__card--big">
+        <img src="img/svc-parking.webp" alt="Parcare la o casă modernă din pavaj deschis cu inserții închise" loading="lazy">
+        <div class="svc__body">
+          <h3>Acces auto și parcare</h3>
+          <p>Pavaj de 6–8 cm, pietriș 25–30 cm sau placă de beton. Nu se lasă sub mașină.</p>
+          <span class="svc__price">manopera de la 140 lei/m²</span>
+        </div>
+      </article>
+      <article class="svc__card">
+        <img src="img/svc-path.webp" alt="Alee curbată din pavele închise la culoare în grădină" loading="lazy">
+        <div class="svc__body">
+          <h3>Alei în grădină</h3>
+          <p>Drepte sau cu cotituri, cu bordură de grădină.</p>
+          <span class="svc__price">de la 110 lei/m²</span>
+        </div>
+      </article>
+      <article class="svc__card">
+        <img src="img/svc-around.webp" alt="Trotuar din pavaj de-a lungul gardului, cu pietriș decorativ" loading="lazy">
+        <div class="svc__body">
+          <h3>Trotuar în jurul casei</h3>
+          <p>Scurgem apa de la fundație, pantă 2–3%.</p>
+          <span class="svc__price">de la 130 lei/m²</span>
+        </div>
+      </article>
+      <article class="svc__card">
+        <img src="img/svc-curb.webp" alt="Bordură între gazon și alee" loading="lazy">
+        <div class="svc__body">
+          <h3>Borduri și rigole</h3>
+          <p>Borduri de grădină și rutiere, rigole, grătare, capace.</p>
+          <span class="svc__price">de la 70 lei/m.l.</span>
+        </div>
+      </article>
+      <article class="svc__card">
+        <img src="img/svc-repair.webp" alt="Beton vechi crăpat lângă casă, care trebuie înlocuit" loading="lazy">
+        <div class="svc__body">
+          <h3>Refacerea pavajului vechi</h3>
+          <p>Scoatem pavajul lăsat sau betonul vechi și refacem fundația.</p>
+          <span class="svc__price">demontare de la 55 lei/m²</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ОСНОВАНИЕ (РАЗРЕЗ) ============ -->
+<section class="sec sec--dark" id="base">
+  <div class="wrap base">
+    <div class="base__text">
+      <p class="label label--light"><i>02</i>Ce e sub pavaj</p>
+      <h2>Pavajul stă <span>pe fundație</span></h2>
+      <p>Dacă se economisește la pietriș și compactare, după o iarnă apar făgașe și bălți. De aceea, în deviz fundația e mereu pe un rând separat: vedeți câte straturi facem și cât de groase.</p>
+      <div class="tabs" role="tablist" aria-label="Tipul de sarcină">
+        <button role="tab" aria-selected="true" data-load="walk">Alee și curte</button>
+        <button role="tab" aria-selected="false" data-load="car">Pentru mașină</button>
+        <button role="tab" aria-selected="false" data-load="otm">Trotuar perimetral</button>
+      </div>
+      <p class="base__depth">Adâncimea totală: <b id="depth">25–30 cm</b></p>
+    </div>
+
+    <div class="pie" data-pie="walk">
+      <div class="pie__img"><img src="img/pie-walk.webp" alt="Straturile sub alee și curte: pavaj, nisip sau amestec uscat, pietriș, geotextil, sol" width="1000" height="1339"><i class="pie__dot" style="left:9%;top:14.6%;--to:22.4">1</i><i class="pie__dot" style="left:9%;top:31.7%;--to:22.6">2</i><i class="pie__dot" style="left:9%;top:49.7%;--to:23.0">3</i><i class="pie__dot" style="left:9%;top:61.5%;--to:22.3">4</i><i class="pie__dot" style="left:9%;top:74.6%;--to:22.3">5</i></div>
+      <div class="pie__side">
+        <ol class="pie__list"><li><b>Pavaj</b><span>4–6 cm</span></li><li><b>Nisip sau amestec uscat (ciment + nisip)</b><span>3–5 cm</span></li><li><b>Pietriș 20–40, compactat în straturi</b><span>15–20 cm</span></li><li><b>Geotextil</b><span>1 strat</span></li><li><b>Sol compactat, pantă 1–2%</b><span>excavare 25–30 cm</span></li></ol>
+        <p class="pie__note">Geotextilul nu lasă pietrișul să intre în sol și nu lasă iarba să crească de jos.</p>
+      </div>
+    </div>
+    <div class="pie" data-pie="car" hidden>
+      <div class="pie__img"><img src="img/pie-car.webp" alt="Straturile sub accesul auto: pavaj gros, nisip, strat gros de pietriș, geotextil, sol" width="1000" height="1339" loading="lazy"><i class="pie__dot" style="left:9%;top:14.6%;--to:22.4">1</i><i class="pie__dot" style="left:9%;top:25.8%;--to:22.2">2</i><i class="pie__dot" style="left:9%;top:43.5%;--to:22.7">3</i><i class="pie__dot" style="left:9%;top:60.3%;--to:22.5">4</i><i class="pie__dot" style="left:9%;top:72%;--to:23.5">5</i></div>
+      <div class="pie__side">
+        <ol class="pie__list"><li><b>Pavaj</b><span>6–8 cm</span></li><li><b>Nisip</b><span>3–5 cm</span></li><li><b>Pietriș 20–40, compactat în straturi</b><span>25–30 cm</span></li><li><b>Geotextil</b><span>1 strat</span></li><li><b>Sol compactat, pantă 1–2%</b><span>excavare 35–45 cm</span></li></ol>
+        <p class="pie__note">Pentru mașină pietrișul e aproape dublu, iar pavajul mai gros — astfel nu apar făgașe.</p>
+      </div>
+    </div>
+    <div class="pie" data-pie="otm" hidden>
+      <div class="pie__img"><img src="img/pie-otmostka.webp" alt="Straturile trotuarului perimetral: pavaj, amestec de nisip și ciment, hidroizolație, pietriș, nisip, termoizolație, nisip" width="1000" height="1339" loading="lazy"><i class="pie__dot" style="left:9%;top:14.6%;--to:22.4">1</i><i class="pie__dot" style="left:9%;top:26.6%;--to:22.6">2</i><i class="pie__dot" style="left:9%;top:39.3%;--to:22.2">3</i><i class="pie__dot" style="left:9%;top:49.9%;--to:22.9">4</i><i class="pie__dot" style="left:9%;top:61.5%;--to:22.3">5</i><i class="pie__dot" style="left:9%;top:70.6%;--to:22.5">6</i><i class="pie__dot" style="left:9%;top:80.5%;--to:25">7</i></div>
+      <div class="pie__side">
+        <ol class="pie__list"><li><b>Pavaj</b><span>4 cm</span></li><li><b>Amestec de nisip și ciment</b><span>5 cm</span></li><li><b>Hidroizolație în rulou</b><span>1 strat</span></li><li><b>Pietriș, fracția 5–20</b><span>8 cm</span></li><li><b>Nisip</b><span>10 cm</span></li><li><b>Termoizolație (polistiren extrudat)</b><span>5 cm</span></li><li><b>Strat subțire de nisip</b><span>2 cm</span></li></ol>
+        <p class="pie__note">Termoizolația nu lasă solul de lângă fundație să înghețe și să se umfle, iar hidroizolația nu lasă apa să ajungă la pereții casei.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ПЛИТКА ============ -->
+<section class="sec" id="tiles">
+  <div class="wrap">
+    <div class="head head--row">
+      <div>
+        <p class="label"><i>03</i>Ce pavaj să alegeți</p>
+        <h2>Alegem pavajul <span>pentru lucrarea dvs.</span></h2>
+      </div>
+      <p class="head__lead">Îl puteți cumpăra singuri sau ne puteți lăsa pe noi: aducem de la fabricile din Moldova la preț de producător și calculăm cantitatea cu 5% rezervă pentru tăieri.</p>
+    </div>
+
+    <div class="tiles">
+      <article class="tile">
+        <div class="tile__img"><img src="img/mat-kirpich.webp" alt="Pavaj gri „cărămidă”, montat în spic" loading="lazy"></div>
+        <h3>„Cărămidă” 20×10</h3>
+        <p>Clasic, se montează în spic sau în rânduri. Se potrivește oriunde.</p>
+        <dl><dt>Grosime</dt><dd>4 / 6 / 8 cm</dd><dt>Material</dt><dd>de la 175 lei/m²</dd></dl>
+      </article>
+      <article class="tile">
+        <div class="tile__img"><img src="img/mat-volna.webp" alt="Pavaj gri „val”" loading="lazy"></div>
+        <h3>„Val”</h3>
+        <p>Se îmbină strâns, bun pentru acces auto și parcare.</p>
+        <dl><dt>Grosime</dt><dd>6 / 8 cm</dd><dt>Material</dt><dd>de la 205 lei/m²</dd></dl>
+      </article>
+      <article class="tile">
+        <div class="tile__img"><img src="img/mat-color.webp" alt="Pavaj de culoare teracotă cu model" loading="lazy"></div>
+        <h3>Colorat și „Orașul vechi”</h3>
+        <p>Colormix, mai multe dimensiuni într-un lot, modele.</p>
+        <dl><dt>Grosime</dt><dd>4 / 6 cm</dd><dt>Material</dt><dd>de la 265 lei/m²</dd></dl>
+      </article>
+      <article class="tile">
+        <div class="tile__img"><img src="img/mat-hex.webp" alt="Pavaj hexagonal cu granulație de piatră" loading="lazy"></div>
+        <h3>Hexagon și format mare</h3>
+        <p>Pentru terase și zone de odihnă. Cere tăiere precisă.</p>
+        <dl><dt>Grosime</dt><dd>6 cm</dd><dt>Material</dt><dd>de la 290 lei/m²</dd></dl>
+      </article>
+      <article class="tile">
+        <div class="tile__img"><img src="img/mat-granit.webp" alt="Pavele din granit cioplit" loading="lazy"></div>
+        <h3>Pavele din granit</h3>
+        <p>Rezistă zeci de ani, nu se decolorează. Montajul costă mai mult.</p>
+        <dl><dt>Grosime</dt><dd>5–10 cm</dd><dt>Material</dt><dd>de la 750 lei/m²</dd></dl>
+      </article>
+      <article class="tile tile--own">
+        <div class="tile__img"><img src="img/mat-vibro.webp" alt="Pavaj gri vibropresat" loading="lazy"></div>
+        <h3>Aveți deja pavajul?</h3>
+        <p>Îl montăm pe al dvs. Verificăm lotul înainte de lucru și vă spunem dacă ajunge.</p>
+        <dl><dt>Plătiți</dt><dd>doar manopera</dd><dt>Montare</dt><dd>de la 110 lei/m²</dd></dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ЦЕНЫ ============ -->
+<section class="sec sec--sand" id="prices">
+  <div class="wrap">
+    <div class="head head--row">
+      <div>
+        <p class="label"><i>04</i>Prețuri pentru lucrări</p>
+        <h2>Lista de prețuri <span>pe poziții</span></h2>
+      </div>
+      <p class="head__lead">Prețuri pentru manoperă, fără materiale. Suma exactă o fixăm în deviz după măsurare — nu se schimbă dacă volumul rămâne același.</p>
+    </div>
+    <div class="price" id="priceTable"></div>
+    <p class="price__note">Comanda minimă — 20 m². Pentru volume de la 200 m² prețul e mai mic, discutăm la măsurare.</p>
+  </div>
+</section>
+
+<!-- ============ РАБОТЫ ============ -->
+<section class="sec" id="works">
+  <div class="wrap">
+    <div class="head">
+      <p class="label"><i>05</i>Lucrările noastre</p>
+      <h2>Obiecte <span>cu cifre</span></h2>
+      <p class="head__lead">Suprafața, termenul și suma finală pentru fiecare obiect — ca să înțelegeți nivelul prețurilor.</p>
+    </div>
+    <div class="works">
+      <article class="work work--big">
+        <img src="img/work-1.webp" alt="Curtea din spate a unei case cu terasă și platformă din pavaj" loading="lazy">
+        <div class="work__info">
+          <h3>Curte cu terasă, Stăuceni</h3>
+          <dl><dt>Suprafața</dt><dd>140 m²</dd><dt>Termen</dt><dd>6 zile</dd><dt>Fundația</dt><dd>pietriș 20 cm</dd><dt>Suma</dt><dd>58 000 lei</dd></dl>
+        </div>
+      </article>
+      <article class="work">
+        <img src="img/work-2.webp" alt="Platformă rotundă din pavaj în grădină" loading="lazy">
+        <div class="work__info">
+          <h3>Platformă în grădină, Durlești</h3>
+          <dl><dt>Suprafața</dt><dd>45 m²</dd><dt>Termen</dt><dd>3 zile</dd><dt>Suma</dt><dd>19 500 lei</dd></dl>
+        </div>
+      </article>
+      <article class="work">
+        <img src="img/work-3.webp" alt="Alee de grădină din dale separate printre verdeață" loading="lazy">
+        <div class="work__info">
+          <h3>Alee din dale, Vatra</h3>
+          <dl><dt>Lungime</dt><dd>22 m</dd><dt>Termen</dt><dd>1 zi</dd><dt>Suma</dt><dd>4 800 lei</dd></dl>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ЭТАПЫ ============ -->
+<section class="sec sec--sand" id="steps">
+  <div class="wrap">
+    <div class="head">
+      <p class="label"><i>06</i>Cum lucrăm</p>
+      <h2>De la apel <span>până la curtea gata</span></h2>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <img src="img/step-measure.webp" alt="Meșterul marchează pavajul pe obiect" loading="lazy">
+        <div><h3>Măsurare</h3><p>Venim, măsurăm suprafața și denivelările, verificăm solul și unde se scurge apa. Gratuit.</p></div>
+      </li>
+      <li class="step">
+        <img src="img/step-cut.webp" alt="Meșterul marchează linia de tăiere pe placă" loading="lazy">
+        <div><h3>Deviz</h3><p>Fiecare lucrare pe un rând separat: excavare, pietriș, bordură, montare, evacuare. Prețul îl fixăm în contract.</p></div>
+      </li>
+      <li class="step">
+        <img src="img/step-base.webp" alt="Muncitorul pregătește fundația pentru pavaj" loading="lazy">
+        <div><h3>Fundația</h3><p>Excavare, geotextil, pietriș compactat în straturi, borduri pe beton.</p></div>
+      </li>
+      <li class="step">
+        <img src="img/step-lay.webp" alt="Mâinile meșterului așază pavajul pe nisip" loading="lazy">
+        <div><h3>Montare</h3><p>30–50 m² pe zi. Tăiere pe margini, placă vibrantă, umplerea rosturilor cu nisip.</p></div>
+      </li>
+      <li class="step">
+        <img src="img/brigade.webp" alt="Meșterul aliniază un rând de pavaj" loading="lazy">
+        <div><h3>Predare și garanție</h3><p>Strângem gunoiul, verificăm pantele cu apă. Garanție 3 ani: dacă se lasă — refacem gratuit.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ ПОЧЕМУ ПРОСЕДАЕТ ============ -->
+<section class="sec" id="mistakes">
+  <div class="wrap">
+    <div class="head head--row">
+      <div>
+        <p class="label"><i>07</i>Dacă pavajul e deja pus</p>
+        <h2>De ce se strică <span>pavajul</span></h2>
+      </div>
+      <p class="head__lead">Aproape toate problemele vin de la fundație și pante. Dacă v-ați recunoscut curtea, refacem pavajul și reparăm cauza, nu doar stratul de sus.</p>
+    </div>
+    <div class="bugs">
+      <article class="bug"><b>Făgașe și gropi</b><p>Pietriș puțin sau necompactat. Pentru mașină trebuie 25–30 cm, dar deseori se pun 10.</p></article>
+      <article class="bug"><b>Bălți lângă casă</b><p>Nu există pantă de 1–2% de la pereți și nici rigole. Apa stă și intră sub fundație.</p></article>
+      <article class="bug"><b>Iarbă în rosturi</b><p>Nu s-a pus geotextil, rosturile nu s-au umplut complet sau s-au umplut cu pământ.</p></article>
+      <article class="bug"><b>Bordura „a plecat”</b><p>Bordura a fost pusă pe nisip fără beton — acum nimic nu mai ține pavajul.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ОТЗЫВЫ ============ -->
+<section class="sec sec--sand" id="reviews">
+  <div class="wrap">
+    <div class="head">
+      <p class="label"><i>08</i>Recenzii</p>
+      <h2>Ce spun <span>clienții</span></h2>
+    </div>
+    <div class="reviews">
+      <blockquote class="review"><p>Au făcut curtea de 90 m² în patru zile. Mi-a plăcut că devizul a fost pe rânduri, iar totalul nu s-a schimbat nici cu un leu.</p><footer><b>Igor</b><span>Trușeni · curte cu acces auto</span></footer></blockquote>
+      <blockquote class="review"><p>Au refăcut pavajul pus înainte „pe fugă”. L-au scos, au adăugat pietriș, au făcut o rigolă la garaj — bălți nu mai sunt.</p><footer><b>Natalia</b><span>Buiucani · refacere</span></footer></blockquote>
+      <blockquote class="review"><p>Sunt în Italia, am rezolvat totul pe Viber: poze în fiecare zi, plata în etape. Părinții sunt mulțumiți.</p><footer><b>Andrei</b><span>Ialoveni · curte pentru părinți</span></footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ВОПРОСЫ ============ -->
+<section class="sec" id="faq">
+  <div class="wrap faq">
+    <div class="head">
+      <p class="label"><i>09</i>Întrebări</p>
+      <h2>Întrebări <span>frecvente</span></h2>
+    </div>
+    <div class="faq__list">
+      <details><summary>Câte zile durează lucrarea?</summary><p>Echipa montează 30–50 m² pe zi. Încă 1–2 zile durează excavarea și fundația. O curte de 100 m² e gata de obicei în 4–5 zile. Dacă facem placă de beton, adăugați 3–5 zile până betonul se întărește.</p></details>
+      <details><summary>Cine cumpără pavajul și pietrișul?</summary><p>Cum vă e comod. Putem aduce totul noi: pavajul de la fabrică la preț de producător, pietrișul și nisipul — de la carieră. Sau montăm pavajul dvs., atunci plătiți doar manopera.</p></details>
+      <details><summary>E nevoie de beton pentru mașină?</summary><p>Nu mereu. Pentru un autoturism ajung 25–30 cm de pietriș bine compactat și pavaj de 6–8 cm. Placa de beton e necesară pentru camioane, microbuze și sol slab.</p></details>
+      <details><summary>Ce grosime de pavaj să aleg?</summary><p>Pentru alei și curte — 4–6 cm. Pentru acces auto și parcare — de la 6 cm, mai bine 8. Pavajul subțire se sparge sub mașină chiar și pe o fundație bună.</p></details>
+      <details><summary>Se poate monta toamna și iarna?</summary><p>Cât nu sunt înghețuri și zăpadă — da, lucrăm până la sfârșitul lui noiembrie. Pe sol înghețat nu montăm: primăvara totul se deformează. Iarna putem face măsurarea și devizul, ca să începem primii primăvara.</p></details>
+      <details><summary>Ce include garanția?</summary><p>Garanție 3 ani prin contract. Dacă pavajul s-a lăsat, s-a ondulat sau a plecat bordura, refacem gratuit. Nu intră deteriorările mecanice și sarcina mai mare decât cea pentru care s-a făcut fundația.</p></details>
+      <details><summary>Lucrați și în afara Chișinăului?</summary><p>Da, în toată Moldova. Măsurarea în Chișinău și suburbii e gratuită, în raioane venim pentru comenzi de la 50 m² sau calculăm după poze.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ФИНАЛ ============ -->
+<section class="cta" id="contact">
+  <div class="wrap cta__in">
+    <div>
+      <h2>Trimiteți poze ale terenului — <span>calculăm azi</span></h2>
+      <p>2–3 poze și dimensiunile aproximative pe WhatsApp sau Viber. Vă răspundem cu prețul orientativ și ora măsurării.</p>
+    </div>
+    <div class="cta__btns">
+      <a class="btn btn--brick btn--lg" href="tel:+37360000000">060 000 000</a>
+      <a class="btn btn--white" href="https://wa.me/37360000000?text=Bun%C4%83%20ziua!%20V%C4%83%20trimit%20poze%20ale%20terenului%20pentru%20calcul." target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn--white" href="viber://chat?number=%2B37360000000">Viber</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <a class="logo logo--light" href="#top"><i class="logo__mark" aria-hidden="true"><b></b><b></b><b></b><b></b></i>PAVEO</a>
+    <p>Montare pavaj, pavele și borduri.<br>Chișinău și toată Moldova.</p>
+    <p><a href="tel:+37360000000">060 000 000</a><br>Lun–Sâm 8:00–19:00</p>
+    <p class="foot__soc"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="TikTok">TikTok</a></p>
+  </div>
+  <div class="wrap foot__copy"><span>© 2026 PAVEO</span><a href="index.html" hreflang="ru">Версия на русском</a></div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+37360000000">Sună</a>
+  <a href="https://wa.me/37360000000" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<!-- Не править: ro.html собирается из index.html скриптом _archive/pavaj-template-sources/make_ro.py -->
+<script type="application/json" id="calc-data">
+{
+ "phone": "37360000000",
+ "minArea": 20,
+ "perDay": 40,
+ "spread": 0.1,
+ "uses": [
+  {
+   "id": "walk",
+   "t": "Curte, alei",
+   "work": 110
+  },
+  {
+   "id": "car",
+   "t": "Acces auto, parcare",
+   "work": 140
+  }
+ ],
+ "bases": [
+  {
+   "id": "ready",
+   "t": "Gata",
+   "s": "există beton sau o suprafață plană",
+   "work": {
+    "walk": 0,
+    "car": 0
+   },
+   "mat": {
+    "walk": 0,
+    "car": 0
+   }
+  },
+  {
+   "id": "gravel",
+   "t": "Pietriș + nisip",
+   "s": "excavare, geotextil, pietriș, compactare",
+   "work": {
+    "walk": 60,
+    "car": 80
+   },
+   "mat": {
+    "walk": 70,
+    "car": 110
+   },
+   "on": true
+  },
+  {
+   "id": "concrete",
+   "t": "Beton",
+   "s": "placă armată 10–15 cm",
+   "work": {
+    "walk": 120,
+    "car": 150
+   },
+   "mat": {
+    "walk": 200,
+    "car": 260
+   },
+   "days": 4
+  }
+ ],
+ "olds": [
+  {
+   "id": "ground",
+   "t": "Pământ, iarbă",
+   "work": 0,
+   "on": true
+  },
+  {
+   "id": "old",
+   "t": "Pavaj sau beton vechi",
+   "work": 55
+  }
+ ],
+ "tiles": [
+  {
+   "id": "v4",
+   "t": "Cărămidă 4 cm",
+   "mat": 175,
+   "walkOnly": true
+  },
+  {
+   "id": "v6",
+   "t": "Cărămidă sau val 6 cm",
+   "mat": 215,
+   "on": true
+  },
+  {
+   "id": "v8",
+   "t": "Val 8 cm",
+   "mat": 260
+  },
+  {
+   "id": "color",
+   "t": "Colorat, „Orașul vechi”",
+   "mat": 265
+  },
+  {
+   "id": "big",
+   "t": "Hexagon, format mare",
+   "mat": 290,
+   "workAdd": 30
+  },
+  {
+   "id": "granite",
+   "t": "Pavele din granit",
+   "mat": 750,
+   "workAdd": 90
+  },
+  {
+   "id": "own",
+   "t": "Am deja pavaj",
+   "mat": 0
+  }
+ ],
+ "extras": [
+  {
+   "id": "curbG",
+   "t": "Bordură de grădină",
+   "unit": "м.п.",
+   "work": 70,
+   "mat": 60
+  },
+  {
+   "id": "curbR",
+   "t": "Bordură rutieră",
+   "unit": "м.п.",
+   "work": 110,
+   "mat": 140
+  },
+  {
+   "id": "drain",
+   "t": "Rigolă de scurgere",
+   "unit": "м.п.",
+   "work": 120,
+   "mat": 180
+  }
+ ],
+ "price": [
+  {
+   "g": "Montare",
+   "rows": [
+    [
+     "Pavaj pe bază pregătită, zonă pietonală",
+     "м²",
+     110
+    ],
+    [
+     "Pavaj pentru mașină (6–8 cm)",
+     "м²",
+     140
+    ],
+    [
+     "Model complex, format mare, hexagon",
+     "м²",
+     140
+    ],
+    [
+     "Pavele din granit",
+     "м²",
+     200
+    ],
+    [
+     "Tăierea pavajului pe contur",
+     "м.п.",
+     40
+    ]
+   ]
+  },
+  {
+   "g": "Fundația",
+   "rows": [
+    [
+     "Excavare și nivelare",
+     "м²",
+     35
+    ],
+    [
+     "Geotextil, pietriș, compactare — pietonal",
+     "м²",
+     60
+    ],
+    [
+     "La fel, pentru mașină (pietriș 25–30 cm)",
+     "м²",
+     80
+    ],
+    [
+     "Placă de beton armată",
+     "м²",
+     150
+    ]
+   ]
+  },
+  {
+   "g": "Borduri și rigole",
+   "rows": [
+    [
+     "Bordură de grădină pe beton",
+     "м.п.",
+     70
+    ],
+    [
+     "Bordură rutieră",
+     "м.п.",
+     110
+    ],
+    [
+     "Rigolă cu grătar",
+     "м.п.",
+     120
+    ],
+    [
+     "Receptor pluvial, capac",
+     "шт.",
+     350
+    ]
+   ]
+  },
+  {
+   "g": "Demontare și evacuare",
+   "rows": [
+    [
+     "Demontarea pavajului vechi",
+     "м²",
+     40
+    ],
+    [
+     "Demontarea betonului",
+     "м²",
+     70
+    ],
+    [
+     "Evacuarea gunoiului și a pământului",
+     "м³",
+     300
+    ]
+   ]
+  }
+ ]
+}
+</script>
+<script src="main.js?v=3"></script>
+</body>
+</html>
